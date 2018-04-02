@@ -1,5 +1,5 @@
 #programme to report the lineage/subspecies of a TB sample alligned to NC000962
-#useage: python fasta_typer9.py [guuid] [name of outfile]
+#useage: python SNP-IT.py [guuid] [name of outfile]
 #or for lots of samples: cat [list of samples] | parallel -j[no. of threads] python fasta_typer9.py {} {}.out
 #Output1: is to file containing absolute and % hits for all subspecies
 #Output2: only the top call, is to standard out - redirect to file if you want eg 1>calls.log
@@ -70,7 +70,7 @@ for key, value in out_dic.items():
         if made[1]==value:
         	key_1 = key
 
-#if two samples match the 6% threshold, we want to select the sublineage eg. xtype and not the parent lineage eg. lineage 4
+#if two samples match the 10% threshold, we want to select the sublineage eg. xtype and not the parent lineage eg. lineage 4
 if made[0] > 10 and made[1] > 10:
 	for key, value in out_dic.items():
         	if made[0]==value:
