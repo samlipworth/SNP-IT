@@ -1,4 +1,7 @@
 # SNP-IT
+
+**NB SNP-IT has been re-farctored by Phill Fowler and Michael Hall - this version is now depricated and no longer maintained.  Please see https://github.com/philipwfowler/snpit for the most recent version**
+
 Whole genome SNP based identification of members of the Mycobacterium tuberculosis complex
 
 SNP-IT allows rapid speciation of fasta files of genomes alligned to NC000962
